@@ -5,5 +5,5 @@ Interactive: false
 
 Name: basePipe |>
 Description: Inserts |> and a newline at the cursor position.
-Binding: basePipeNewlineIndent
+Binding: pipeNewlineIndent
 Interactive: false

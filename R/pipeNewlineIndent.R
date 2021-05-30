@@ -1,9 +1,9 @@
-#' basePipeNewlineIndent
+#' pipeNewlineIndent
 #' @description: runs the basepipe and creates a new line
 #' @return NULL
 #' @export
 #'
-basePipeNewlineIndent <- function(){
+pipeNewlineIndent <- function(){
   SPACE_PREF <- .rs.readUiPref('num_spaces_for_tab')
 
   context <- rstudioapi::getActiveDocumentContext()
