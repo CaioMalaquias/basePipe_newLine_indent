@@ -10,8 +10,6 @@ pipeNewlineIndent <- function(){
   context_row <- context$selection[[1]]$range$end["row"]
   indent_context <- regexec(pattern = "\\w", context$contents[context_row])[[1]][1]-1 #match pos of the first word -1
   if(indent_context < 0 )indent_context <- nchar(context$contents[context_row]) #we found only whitespace, stay at this level.
-  if(indent_context == 0)indent_context <- SPACE_PREF #we are at 0 indent, this is the only time we want to add indent with %>%
-
   if(sum(context$selection[[1]]$range$end -
          context$selection[[1]]$range$start) > 0){
     #Non-empy selection. Just insert the pipe and newline.

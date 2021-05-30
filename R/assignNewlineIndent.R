@@ -25,11 +25,3 @@ assignNewlineIndent <- function(){
     }
   }
 }
-
-
-
-
-
-
-
-
