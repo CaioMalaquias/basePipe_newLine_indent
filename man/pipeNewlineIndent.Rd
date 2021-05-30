@@ -4,7 +4,7 @@
 \alias{pipeNewlineIndent}
 \title{pipeNewlineIndent}
 \usage{
-pipeNewlineIndent()
+basePipeNewlineIndent()
 }
 \description{
 Call this function as an addin to insert pipe and newline at the cursor position. Respects your indents.
